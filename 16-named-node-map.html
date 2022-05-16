@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Named Node Map</title>
+</head>
+
+<body>
+    <img id="logo"
+        src="https://1.bp.blogspot.com/-8zPRkqiwO2w/XfYeVNbIO7I/AAAAAAAAAls/U2MvQORcgPYfUkCWQY8vkjEwZgjA4ilYwCK4BGAYYCw/s1600/headerheader.png"
+        alt="own wp banner">
+    <script>
+
+        const logo = document.getElementById("logo");
+        const attributes = logo.attributes;
+
+        for (let attribute of attributes) {
+            console.info(`${attribute.name} : ${attribute.value}`);
+        }
+
+    </script>
+
+</body>
+
+</html>
